@@ -19,7 +19,7 @@ This script is also designed to run other popular scripts and modules intended t
 
 ## Installation and Usage
 
-1. Download the repo and rename folder as 'Tools' or whatever you choose. Include the modules you need already.
+1. Download the repo and rename folder as 'Tools' or whatever you choose. This repo includes the modules you need already.
 
 Want to do it manually:
 
