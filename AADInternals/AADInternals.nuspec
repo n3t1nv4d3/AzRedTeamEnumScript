@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>AADInternals</id>
+    <version>0.4.5</version>
+    <authors>Dr Nestori Syynimaa</authors>
+    <owners>Gerenios Ltd</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://o365blog.com/aadinternals</projectUrl>
+    <description>The AADInternals PowerShell Module utilises several internal features of Azure Active Directory, Office 365, and related admin tools.
+
+AADInternals allows you to export ADFS certificates, Azure AD Connect passwords, and modify numerous Azure AD / Office 365 settings not otherwise possible.
+
+DISCLAIMER: Functionality provided through this module are not supported by Microsoft and thus should not be used in a production environment. Use on your own risk!</description>
+    <releaseNotes></releaseNotes>
+    <copyright>(c) 2018 - 2021 Nestori Syynimaa. Distributed under MIT license.</copyright>
+    <tags>Office365 Microsoft365 Azure AAD Security PSModule</tags>
+  </metadata>
+</package>

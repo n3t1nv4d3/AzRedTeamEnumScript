@@ -1,0 +1,1744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Add-AzureADAdministrativeUnitMember</command:name>
+      <command:verb>Add</command:verb>
+      <command:noun>AzureADAdministrativeUnitMember</command:noun>
+      <maml:description>
+        <maml:para>新增管理單位成員。</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Add-AzureADAdministrativeUnitMember Cmdlet 可新增 Active Directory 管理單位成員。</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Add-AzureADAdministrativeUnitMember</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+          <maml:name>InformationAction</maml:name>
+          <maml:Description>
+            <maml:para>指定此 Cmdlet 回應資訊事件的方式。此參數可接受的值: * Continue</maml:para>
+            <maml:para>* Ignore</maml:para>
+            <maml:para>* Inquire</maml:para>
+            <maml:para>* SilentlyContinue</maml:para>
+            <maml:para>* Stop</maml:para>
+            <maml:para>* Suspend</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+          <dev:type>
+            <maml:name>ActionPreference</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+          <maml:name>InformationVariable</maml:name>
+          <maml:Description>
+            <maml:para>指定用以儲存資訊事件訊息的變數。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>指定 Active Directory 管理單位的識別碼。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>RefObjectId</maml:name>
+          <maml:Description>
+            <maml:para>指定將指派為擁有者/管理員/成員之特定 Azure Active Directory 物件的唯一識別碼。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+        <maml:name>InformationAction</maml:name>
+        <maml:Description>
+          <maml:para>指定此 Cmdlet 回應資訊事件的方式。此參數可接受的值: * Continue</maml:para>
+          <maml:para>* Ignore</maml:para>
+          <maml:para>* Inquire</maml:para>
+          <maml:para>* SilentlyContinue</maml:para>
+          <maml:para>* Stop</maml:para>
+          <maml:para>* Suspend</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+        <dev:type>
+          <maml:name>ActionPreference</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+        <maml:name>InformationVariable</maml:name>
+        <maml:Description>
+          <maml:para>指定用以儲存資訊事件訊息的變數。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>指定 Active Directory 管理單位的識別碼。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>RefObjectId</maml:name>
+        <maml:Description>
+          <maml:para>指定將指派為擁有者/管理員/成員之特定 Azure Active Directory 物件的唯一識別碼。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples/>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureADAdministrativeUnitMember</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADAdministrativeUnitMember</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Add-AzureADScopedRoleMembership</command:name>
+      <command:verb>Add</command:verb>
+      <command:noun>AzureADScopedRoleMembership</command:noun>
+      <maml:description>
+        <maml:para>將限域角色成員資格新增至管理單位。</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Add-AzureADScopedRoleMembership Cmdlet 可將限域角色成員資格新增至管理單位。</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Add-AzureADScopedRoleMembership</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>AdministrativeUnitObjectId</maml:name>
+          <maml:Description>
+            <maml:para>指定管理單位的識別碼。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para></maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>RoleMemberInfo</maml:name>
+          <maml:Description>
+            <maml:para>指定 RoleMemberInfo 物件。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">RoleMemberInfo</command:parameterValue>
+          <dev:type>
+            <maml:name>RoleMemberInfo</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>RoleObjectId</maml:name>
+          <maml:Description>
+            <maml:para></maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>AdministrativeUnitObjectId</maml:name>
+        <maml:Description>
+          <maml:para>指定管理單位的識別碼。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para></maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>RoleMemberInfo</maml:name>
+        <maml:Description>
+          <maml:para>指定 RoleMemberInfo 物件。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">RoleMemberInfo</command:parameterValue>
+        <dev:type>
+          <maml:name>RoleMemberInfo</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>RoleObjectId</maml:name>
+        <maml:Description>
+          <maml:para></maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>範例 1</maml:title>
+        <dev:code>$User = Get-AzureADUser -SearchString "The user that will be an admin on this unit"
+	$Role = Get-AzureADDirectoryRole | Where-Object -Property DisplayName -EQ -Value "User Account Administrator"
+	$Unit = Get-AzureADAdministrativeUnit | Where-Object -Property DisplayName -Eq -Value "&lt;The display name of the unit"
+	$RoleMember = New-Object -TypeName Microsoft.Open.AzureAD.Model.RoleMemberInfo
+	$RoleMember.ObjectId = $User.ObjectID
+	Add-AzureADScopedRoleMembership -ObjectId $unit.ObjectId -RoleObjectId $Role.ObjectId -RoleMemberInfo $RoleMember</dev:code>
+        <dev:remarks>
+          <maml:para>此 Cmdlet 會傳回限域角色成員資格物件:</maml:para>
+          <maml:para></maml:para>
+          <maml:para>	AdministrativeUnitObjectId           RoleObjectId 	--------------------------           ------------ 	c9ab56cc-e349-4237-856e-cab03157a91e 526b7173-5a6e-49dc-88ec-b677a9093709</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureADScopedRoleMembership</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADScopedRoleMembership</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzureADAdministrativeUnit</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzureADAdministrativeUnit</command:noun>
+      <maml:description>
+        <maml:para>取得管理單位。</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Get-AzureADAdministrativeUnit Cmdlet 可取得 Azure Active Directory 管理單位。</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzureADAdministrativeUnit</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>All</maml:name>
+          <maml:Description>
+            <maml:para>若為 true，則傳回所有管理單位。若為 false，則傳回 Top 參數所指定的物件數</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>Filter</maml:name>
+          <maml:Description>
+            <maml:para>指定 oData v3.0 篩選陳述式。此參數會篩選要傳回哪些物件。</maml:para>
+            <maml:para>如需 oData v3.0 篩選運算式的詳細資訊，請參閱 https://msdn.microsoft.com/en-us/library/hh169248%28v=nav.90%29.aspx</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>Top</maml:name>
+          <maml:Description>
+            <maml:para>指定要傳回的記錄數上限。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-AzureADAdministrativeUnit</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>All</maml:name>
+          <maml:Description>
+            <maml:para>若為 true，則傳回所有管理單位。若為 false，則傳回 Top 參數指定的物件數</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>指定 Azure Active Directory 中管理單位的識別碼。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>All</maml:name>
+        <maml:Description>
+          <maml:para>若為 true，則傳回所有管理單位。若為 false，則傳回 Top 參數指定的物件數</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>Filter</maml:name>
+        <maml:Description>
+          <maml:para>指定 oData v3.0 篩選陳述式。此參數會篩選要傳回哪些物件。</maml:para>
+          <maml:para>如需 oData v3.0 篩選運算式的詳細資訊，請參閱 https://msdn.microsoft.com/en-us/library/hh169248%28v=nav.90%29.aspx</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>指定管理單位在 Azure Active Directory 中的識別碼。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>Top</maml:name>
+        <maml:Description>
+          <maml:para>指定要傳回的記錄數上限。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples/>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>New-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzureADAdministrativeUnitMember</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzureADAdministrativeUnitMember</command:noun>
+      <maml:description>
+        <maml:para>取得管理單位的成員。</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Get-AzureADAdministrativeUnitMember Cmdlet 可取得 Azure Active Directory 管理單位的成員。</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzureADAdministrativeUnitMember</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+          <maml:name>InformationAction</maml:name>
+          <maml:Description>
+            <maml:para>指定此 Cmdlet 回應資訊事件的方式。此參數可接受的值: * Continue</maml:para>
+            <maml:para>* Ignore</maml:para>
+            <maml:para>* Inquire</maml:para>
+            <maml:para>* SilentlyContinue</maml:para>
+            <maml:para>* Stop</maml:para>
+            <maml:para>* Suspend</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+          <dev:type>
+            <maml:name>ActionPreference</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+          <maml:name>InformationVariable</maml:name>
+          <maml:Description>
+            <maml:para>指定用以儲存資訊事件訊息的變數。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>指定管理單位在 Azure Active Directory 中的識別碼。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>All</maml:name>
+          <maml:Description>
+            <maml:para>若為 true，則傳回所有管理單位成員。若為 false，則傳回 Top 參數指定的物件數</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>Top</maml:name>
+          <maml:Description>
+            <maml:para>指定要傳回的記錄數上限。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+        <maml:name>InformationAction</maml:name>
+        <maml:Description>
+          <maml:para>指定此 Cmdlet 回應資訊事件的方式。此參數可接受的值: * Continue</maml:para>
+          <maml:para>* Ignore</maml:para>
+          <maml:para>* Inquire</maml:para>
+          <maml:para>* SilentlyContinue</maml:para>
+          <maml:para>* Stop</maml:para>
+          <maml:para>* Suspend</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+        <dev:type>
+          <maml:name>ActionPreference</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+        <maml:name>InformationVariable</maml:name>
+        <maml:Description>
+          <maml:para>指定用以儲存資訊事件訊息的變數。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>指定管理單位在 Azure Active Directory 中的識別碼。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>All</maml:name>
+        <maml:Description>
+          <maml:para>若為 true，則傳回所有管理單位成員。若為 false，則傳回 Top 參數指定的物件數</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>Top</maml:name>
+        <maml:Description>
+          <maml:para>指定要傳回的記錄數上限。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>範例 1 依識別碼取得管理單位成員</maml:title>
+        <dev:code>PS C:\&gt; Get-AzureADAdministrativeUnitMember -ObjectId "ef08b536-9d0a-4f8f-bda5-8b9cd01a9159"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Add-AzureADAdministrativeUnitMember</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADAdministrativeUnitMember</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzureADScopedRoleMembership</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzureADScopedRoleMembership</command:noun>
+      <maml:description>
+        <maml:para>從管理單位取得限域角色成員資格。</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Get-AzureADScopedRoleMembership Cmdlet 可從 Azure Active Directory (AD) 的管理單位取得限域角色成員資格。</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzureADScopedRoleMembership</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>指定物件的識別碼。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ScopedRoleMembershipId</maml:name>
+          <maml:Description>
+            <maml:para>指定限域角色成員資格的識別碼。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>指定物件的識別碼。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ScopedRoleMembershipId</maml:name>
+        <maml:Description>
+          <maml:para>指定限域角色成員資格的識別碼。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>----------- 範例 1: 取得限域角色管理員 -----------</maml:title>
+        <dev:code>PS C:\&gt;Get-AzureADScopedRoleMembership -ObjectId "526b7173-5a6e-49dc-88ec-b677a9093709" -ScopedRoleMembershipId "356b7173-5a6e-49dc-88ec-b677a9093709"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>--------- 範例 2: 列出 AU 的限域管理員。---------</maml:title>
+        <dev:code>PS C:\&gt;Get-AzureADScopedRoleMembership -ObjectId "526b7173-5a6e-49dc-88ec-b677a9093709"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Add-AzureADScopedRoleMembership</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADScopedRoleMembership</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-AzureADAdministrativeUnit</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>AzureADAdministrativeUnit</command:noun>
+      <maml:description>
+        <maml:para>建立管理單位。</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>New-AzureADAdministrativeUnit Cmdlet 可在 Azure Active Directory (AD) 中建立管理單位。</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-AzureADAdministrativeUnit</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Description</maml:name>
+          <maml:Description>
+            <maml:para>指定新管理單位的描述。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DisplayName</maml:name>
+          <maml:Description>
+            <maml:para>指定新管理單位的顯示名稱。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+          <maml:name>InformationAction</maml:name>
+          <maml:Description>
+            <maml:para>指定此 Cmdlet 回應資訊事件的方式。此參數可接受的值:</maml:para>
+            <maml:para>- Continue</maml:para>
+            <maml:para>- Ignore</maml:para>
+            <maml:para>- Inquire</maml:para>
+            <maml:para>- SilentlyContinue</maml:para>
+            <maml:para>- Stop</maml:para>
+            <maml:para>- Suspend</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+          <dev:type>
+            <maml:name>ActionPreference</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+          <maml:name>InformationVariable</maml:name>
+          <maml:Description>
+            <maml:para>指定資訊變數。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Description</maml:name>
+        <maml:Description>
+          <maml:para>指定新管理單位的描述。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DisplayName</maml:name>
+        <maml:Description>
+          <maml:para>指定新管理單位的顯示名稱。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+        <maml:name>InformationAction</maml:name>
+        <maml:Description>
+          <maml:para>指定此 Cmdlet 回應資訊事件的方式。此參數可接受的值:</maml:para>
+          <maml:para>- Continue</maml:para>
+          <maml:para>- Ignore</maml:para>
+          <maml:para>- Inquire</maml:para>
+          <maml:para>- SilentlyContinue</maml:para>
+          <maml:para>- Stop</maml:para>
+          <maml:para>- Suspend</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+        <dev:type>
+          <maml:name>ActionPreference</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+        <maml:name>InformationVariable</maml:name>
+        <maml:Description>
+          <maml:para>指定資訊變數。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples/>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Remove-AzureADAdministrativeUnit</command:name>
+      <command:verb>Remove</command:verb>
+      <command:noun>AzureADAdministrativeUnit</command:noun>
+      <maml:description>
+        <maml:para>移除管理單位。</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Remove-AzureADAdministrativeUnit Cmdlet 可從 Azure Active Directory (AD) 移除管理單位。</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-AzureADAdministrativeUnit</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+          <maml:name>InformationAction</maml:name>
+          <maml:Description>
+            <maml:para>指定此 Cmdlet 回應資訊事件的方式。此參數可接受的值: * Continue</maml:para>
+            <maml:para>* Ignore</maml:para>
+            <maml:para>* Inquire</maml:para>
+            <maml:para>* SilentlyContinue</maml:para>
+            <maml:para>* Stop</maml:para>
+            <maml:para>* Suspend</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+          <dev:type>
+            <maml:name>ActionPreference</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+          <maml:name>InformationVariable</maml:name>
+          <maml:Description>
+            <maml:para>指定用以儲存資訊事件訊息的變數。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>指定 Active Directory 中管理單位的識別碼。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+        <maml:name>InformationAction</maml:name>
+        <maml:Description>
+          <maml:para>指定此 Cmdlet 回應資訊事件的方式。此參數可接受的值: * Continue</maml:para>
+          <maml:para>* Ignore</maml:para>
+          <maml:para>* Inquire</maml:para>
+          <maml:para>* SilentlyContinue</maml:para>
+          <maml:para>* Stop</maml:para>
+          <maml:para>* Suspend</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+        <dev:type>
+          <maml:name>ActionPreference</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+        <maml:name>InformationVariable</maml:name>
+        <maml:Description>
+          <maml:para>指定用以儲存資訊事件訊息的變數。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>指定 Active Directory 中管理單位的識別碼。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples/>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Remove-AzureADAdministrativeUnitMember</command:name>
+      <command:verb>Remove</command:verb>
+      <command:noun>AzureADAdministrativeUnitMember</command:noun>
+      <maml:description>
+        <maml:para>移除管理單位成員。</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Remove-AzureADAdministrativeUnitMember Cmdlet 可移除 Azure Active Directory (AD) 中的管理單位成員。</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-AzureADAdministrativeUnitMember</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+          <maml:name>InformationAction</maml:name>
+          <maml:Description>
+            <maml:para>指定此 Cmdlet 回應資訊事件的方式。</maml:para>
+            <maml:para>此參數可接受的值:</maml:para>
+            <maml:para>- Continue</maml:para>
+            <maml:para>- Ignore</maml:para>
+            <maml:para>- Inquire</maml:para>
+            <maml:para>- SilentlyContinue</maml:para>
+            <maml:para>- Stop</maml:para>
+            <maml:para>- Suspend</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+          <dev:type>
+            <maml:name>ActionPreference</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+          <maml:name>InformationVariable</maml:name>
+          <maml:Description>
+            <maml:para>指定資訊變數。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>MemberId</maml:name>
+          <maml:Description>
+            <maml:para>指定管理單位成員的識別碼。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>指定 Azure AD 中管理單位的識別碼。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+        <maml:name>InformationAction</maml:name>
+        <maml:Description>
+          <maml:para>指定此 Cmdlet 回應資訊事件的方式。</maml:para>
+          <maml:para>此參數可接受的值:</maml:para>
+          <maml:para>- Continue</maml:para>
+          <maml:para>- Ignore</maml:para>
+          <maml:para>- Inquire</maml:para>
+          <maml:para>- SilentlyContinue</maml:para>
+          <maml:para>- Stop</maml:para>
+          <maml:para>- Suspend</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+        <dev:type>
+          <maml:name>ActionPreference</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+        <maml:name>InformationVariable</maml:name>
+        <maml:Description>
+          <maml:para>指定資訊變數。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>MemberId</maml:name>
+        <maml:Description>
+          <maml:para>指定管理單位成員的識別碼。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>指定管理單位在 Azure AD 中的識別碼。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples/>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Add-AzureADAdministrativeUnitMember</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADAdministrativeUnitMember</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Remove-AzureADScopedRoleMembership</command:name>
+      <command:verb>Remove</command:verb>
+      <command:noun>AzureADScopedRoleMembership</command:noun>
+      <maml:description>
+        <maml:para>移除限域角色成員資格。</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Remove-AzureADScopedRoleMembership Cmdlet 可從 Azure Active Directory (AD) 移除限域角色成員資格。</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-AzureADScopedRoleMembership</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>指定物件識別碼。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ScopedRoleMembershipId</maml:name>
+          <maml:Description>
+            <maml:para>指定要移除之限域角色成員資格的識別碼。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>指定物件識別碼。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ScopedRoleMembershipId</maml:name>
+        <maml:Description>
+          <maml:para>指定要移除之限域角色成員資格的識別碼。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- 範例 1 --------------------------</maml:title>
+        <dev:code>Remove-AzureADScopedRoleMembership -ObjectId "1026185e-25df-4522-a380-7ab697a7241c" -ScopedRoleMembershipId "3028185e-25df-4522-a380-7ab697a7241c"</dev:code>
+        <dev:remarks>
+          <maml:para>移除限域成員資格。</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Add-AzureADScopedRoleMembership</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureADScopedRoleMembership</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-AzureADAdministrativeUnit</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>AzureADAdministrativeUnit</command:noun>
+      <maml:description>
+        <maml:para>更新管理單位。</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Set-AzureADAdministrativeUnit Cmdlet 可更新 Azure Active Directory (AD) 中的管理單位。</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-AzureADAdministrativeUnit</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Description</maml:name>
+          <maml:Description>
+            <maml:para>指定描述。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DisplayName</maml:name>
+          <maml:Description>
+            <maml:para>指定顯示名稱。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+          <maml:name>InformationAction</maml:name>
+          <maml:Description>
+            <maml:para>指定此 Cmdlet 回應資訊事件的方式。此參數可接受的值:</maml:para>
+            <maml:para>- Continue</maml:para>
+            <maml:para>- Ignore</maml:para>
+            <maml:para>- Inquire</maml:para>
+            <maml:para>- SilentlyContinue</maml:para>
+            <maml:para>- Stop</maml:para>
+            <maml:para>- Suspend</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+          <dev:type>
+            <maml:name>ActionPreference</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+          <maml:name>InformationVariable</maml:name>
+          <maml:Description>
+            <maml:para>指定資訊變數。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>指定管理單位在 Azure AD 中的識別碼。</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Description</maml:name>
+        <maml:Description>
+          <maml:para>指定描述。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DisplayName</maml:name>
+        <maml:Description>
+          <maml:para>指定顯示名稱。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+        <maml:name>InformationAction</maml:name>
+        <maml:Description>
+          <maml:para>指定此 Cmdlet 回應資訊事件的方式。此參數可接受的值:</maml:para>
+          <maml:para>- Continue</maml:para>
+          <maml:para>- Ignore</maml:para>
+          <maml:para>- Inquire</maml:para>
+          <maml:para>- SilentlyContinue</maml:para>
+          <maml:para>- Stop</maml:para>
+          <maml:para>- Suspend</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+        <dev:type>
+          <maml:name>ActionPreference</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+        <maml:name>InformationVariable</maml:name>
+        <maml:Description>
+          <maml:para>指定資訊變數。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>指定管理單位在 Azure AD 中的識別碼。</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples/>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+    <command:details>
+        <command:name>
+            Get-AzureADExternalDomainFederation
+        </command:name>
+        <maml:description>
+            <maml:para>依外部網域名稱取得 externalDomainFederation。</maml:para>
+        </maml:description>
+        <maml:copyright>
+            <maml:para></maml:para>
+        </maml:copyright>
+        <command:verb>Get</command:verb>
+        <command:noun>AzureADExternalDomainFederation</command:noun>
+        <dev:version></dev:version>
+    </command:details>
+    <maml:description>
+        <maml:para></maml:para>
+    </maml:description>
+    <!-- Cmdlet syntax section-->
+    <command:syntax>
+        <command:syntaxitem>
+            <maml:name>Get-AzureADExternalDomainFederation</maml:name>
+            <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+                <maml:name>ExternalDomainName</maml:name>
+                <maml:description>
+                    <maml:para>Azure Active Directory 中 externalDomainFederation 的唯一識別碼</maml:para>
+                </maml:description>
+                <command:parametervalue required="true" variablelength="false">string</command:parametervalue>
+            </command:parameter>
+            <command:parameter required="false" variablelength="false" globbing="false" pipelineinput="true" position="named">
+                <maml:name>All</maml:name>
+                <maml:description>
+                    <maml:para>表示從伺服器傳回特定查詢之所有結果的布林值</maml:para>
+                </maml:description>
+                <command:parametervalue required="false" variablelength="false">bool?</command:parametervalue>
+            </command:parameter>
+            <command:parameter required="false" variablelength="false" globbing="false" pipelineinput="true" position="named">
+                <maml:name>Top</maml:name>
+                <maml:description>
+                    <maml:para>要傳回的記錄數目上限。</maml:para>
+                </maml:description>
+                <command:parametervalue required="false" variablelength="false">int?</command:parametervalue>
+            </command:parameter>
+            <command:parameter required="false" variablelength="false" globbing="false" pipelineinput="true" position="named">
+                <maml:name>Filter</maml:name>
+                <maml:description>
+                    <maml:para>OData Version 3.0 篩選陳述式，其控制要傳回哪個物件。</maml:para>
+                </maml:description>
+                <command:parametervalue required="false" variablelength="false">string</command:parametervalue>
+            </command:parameter>
+        </command:syntaxitem>
+    </command:syntax>
+    <!-- Cmdlet parameter section  -->
+    <command:parameters>
+        <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+            <maml:name>ExternalDomainName</maml:name>
+            <maml:description>
+                <maml:para>Azure Active Directory 中 externalDomainFederation 的唯一識別碼</maml:para>
+            </maml:description>
+            <command:parametervalue required="true" variablelength="false">string</command:parametervalue>
+            <dev:type>
+                <maml:name>string</maml:name>
+                <maml:uri/>
+            </dev:type>
+            <dev:defaultvalue></dev:defaultvalue>
+        </command:parameter>
+        <command:parameter required="false" variablelength="false" globbing="false" pipelineinput="true" position="named">
+            <maml:name>All</maml:name>
+            <maml:description>
+                <maml:para>表示從伺服器傳回特定查詢之所有結果的布林值</maml:para>
+            </maml:description>
+            <command:parametervalue required="false" variablelength="false">bool?</command:parametervalue>
+            <dev:type>
+                <maml:name>bool?</maml:name>
+                <maml:uri/>
+            </dev:type>
+            <dev:defaultvalue></dev:defaultvalue>
+        </command:parameter>
+        <command:parameter required="false" variablelength="false" globbing="false" pipelineinput="true" position="named">
+            <maml:name>Top</maml:name>
+            <maml:description>
+                <maml:para>要傳回的記錄數目上限。</maml:para>
+            </maml:description>
+            <command:parametervalue required="false" variablelength="false">int?</command:parametervalue>
+            <dev:type>
+                <maml:name>int?</maml:name>
+                <maml:uri/>
+            </dev:type>
+            <dev:defaultvalue></dev:defaultvalue>
+        </command:parameter>
+        <command:parameter required="false" variablelength="false" globbing="false" pipelineinput="true" position="named">
+            <maml:name>Filter</maml:name>
+            <maml:description>
+                <maml:para>OData Version 3.0 篩選陳述式，其控制要傳回哪個物件。</maml:para>
+            </maml:description>
+            <command:parametervalue required="false" variablelength="false">string</command:parametervalue>
+            <dev:type>
+                <maml:name>string</maml:name>
+                <maml:uri/>
+            </dev:type>
+            <dev:defaultvalue></dev:defaultvalue>
+        </command:parameter>
+    </command:parameters>
+    <command:inputtypes>
+    </command:inputtypes>
+    <command:returnvalues>
+    </command:returnvalues>
+    <!-- Error section-->
+    <command:terminatingerrors/>
+    <command:nonterminatingerrors/>
+    <!-- Notes section  -->
+    <maml:alertset>
+        <maml:title></maml:title>
+        <maml:alert>
+            <maml:para>
+            </maml:para>
+        </maml:alert>
+        <maml:alert>
+            <maml:para></maml:para>
+        </maml:alert>
+    </maml:alertset>
+    <!-- Example section  -->
+    <command:examples>
+    <command:example>
+        <maml:title>範例 1: 取得指定外部網域的外部網域同盟設定。</maml:title>
+        <dev:code>Get-AzureADExternalFederationDomain -ExternalDomainName "test.com" 
+</dev:code>
+        <dev:remarks>
+          <maml:para>此命令會取得外部網域同盟設定。</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <!-- Link section  -->
+    <maml:relatedlinks>
+    </maml:relatedlinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+    <command:details>
+        <command:name>
+            New-AzureADExternalDomainFederation
+        </command:name>
+        <maml:description>
+            <maml:para>在 Azure Active Directory 中建立新的 externalDomainFederation</maml:para>
+        </maml:description>
+        <maml:copyright>
+            <maml:para></maml:para>
+        </maml:copyright>
+        <command:verb>New</command:verb>
+        <command:noun>AzureADExternalDomainFederation</command:noun>
+        <dev:version></dev:version>
+    </command:details>
+    <maml:description>
+        <maml:para></maml:para>
+    </maml:description>
+    <!-- Cmdlet syntax section-->
+    <command:syntax>
+        <command:syntaxitem>
+            <maml:name>New-AzureADExternalDomainFederation</maml:name>
+             <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+                <maml:name>ExternalDomainName</maml:name>
+                <maml:description>
+                    <maml:para>您所要進行設定的外部網域。</maml:para>
+                </maml:description>
+                <command:parametervalue required="true" variablelength="false">string</command:parametervalue>
+            </command:parameter>
+             <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+                <maml:name>FederationSettings</maml:name>
+                <maml:description>
+                    <maml:para>外部網域的同盟設定。</maml:para>
+                    <maml:para>$federationSettings = New-Object -TypeName Microsoft.Open.AzureAD.Model.DomainFederationSettings</maml:para>
+                    <maml:para>您最終可以將此變數傳遞給 Cmdlet:</maml:para>
+                    <maml:para>New-AzureADExternalDomainFederation -FederationSettings $federationSettings ...</maml:para>
+                </maml:description>
+                <command:parametervalue required="true" variablelength="false"></command:parametervalue>
+                <dev:type>
+                  <maml:name>DomainFederationSettings</maml:name>
+                  <maml:uri/>
+                </dev:type>
+            </command:parameter>
+        </command:syntaxitem>
+    </command:syntax>
+    <!-- Cmdlet parameter section  -->
+    <command:parameters>
+     <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+            <maml:name>ExternalDomainName</maml:name>
+            <maml:description>
+                <maml:para>Azure Active Directory 中 externalDomainFederation 的唯一識別碼</maml:para>
+            </maml:description>
+            <command:parametervalue required="true" variablelength="false">string</command:parametervalue>
+            <dev:type>
+                <maml:name>string</maml:name>
+                <maml:uri/>
+            </dev:type>
+            <dev:defaultvalue></dev:defaultvalue>
+        </command:parameter>
+         <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+            <maml:name>FederationSettings</maml:name>
+            <maml:description>
+                <maml:para>外部網域的同盟設定。</maml:para>
+            </maml:description>
+            <command:parametervalue required="true" variablelength="false">string</command:parametervalue>
+            <dev:type>
+                <maml:name>DomainFederationSettings</maml:name>
+                <maml:uri/>
+            </dev:type>
+            <dev:defaultvalue></dev:defaultvalue>
+        </command:parameter>
+    </command:parameters>
+    <!-- Input - Output section-->
+    <command:inputtypes/>
+    <command:returnvalues>
+    </command:returnvalues>
+    <!-- Error section-->
+    <command:terminatingerrors/>
+    <command:nonterminatingerrors/>
+    <!-- Notes section  -->
+    <maml:alertset>
+        <maml:title></maml:title>
+        <maml:alert>
+            <maml:para>
+            </maml:para>
+        </maml:alert>
+        <maml:alert>
+            <maml:para></maml:para>
+        </maml:alert>
+    </maml:alertset>
+    <!-- Example section  -->
+    <command:examples>
+     <command:example>
+        <maml:title>範例 1: 建立新的外部網域同盟。</maml:title>
+        <dev:code>$federationSettings = New-Object Microsoft.Open.AzureAD.Model.DomainFederationSettings
+$federationSettings.ActiveLogOnUri="https://adfs.com/adfs/ls"
+$federationSettings.IssuerUri = "http://adfs.com/adfs/services/trust"
+$federationSettings.LogOffUri = $federationSettings.ActiveLogOnUri
+$federationSettings.FederationBrandName = "Contoso Misa1 US"
+$federationSettings.MetadataExchangeUri="http://adfs.com/FederationMetadata.xml"
+$federationSettings.PassiveLogOnUri=$federationSettings.ActiveLogOnUri
+$federationSettings.PreferredAuthenticationProtocol="WsFed"
+$federationSettings.SigningCertificate="X509 signing public key"
+New-AzureADExternalFederationDomain -ExternalDomainName "adfs.com" -FederationSettings $federationSettings
+</dev:code>
+        <dev:remarks>
+          <maml:para>此命令會建立新的外部同盟網域設定。</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <!-- Link section  -->
+    <maml:relatedlinks>
+    </maml:relatedlinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+    <command:details>
+        <command:name>
+            Remove-AzureADExternalDomainFederation
+        </command:name>
+        <maml:description>
+            <maml:para>依外部網域名稱刪除 externalDomainFederation。</maml:para>
+        </maml:description>
+        <maml:copyright>
+            <maml:para></maml:para>
+        </maml:copyright>
+        <command:verb>Remove</command:verb>
+        <command:noun>AzureADExternalDomainFederation</command:noun>
+        <dev:version></dev:version>
+    </command:details>
+    <maml:description>
+        <maml:para></maml:para>
+    </maml:description>
+    <!-- Cmdlet syntax section-->
+    <command:syntax>
+        <command:syntaxitem>
+            <maml:name>Remove-AzureADExternalDomainFederation</maml:name>
+            <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+                <maml:name>ExternalDomainName</maml:name>
+                <maml:description>
+                    <maml:para>Azure Active Directory 中 externalDomainFederation 的唯一識別碼</maml:para>
+                </maml:description>
+                <command:parametervalue required="true" variablelength="false">string</command:parametervalue>
+            </command:parameter>
+        </command:syntaxitem>
+    </command:syntax>
+    <!-- Cmdlet parameter section  -->
+    <command:parameters>
+        <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+            <maml:name>ExternalDomainName</maml:name>
+            <maml:description>
+                <maml:para>Azure Active Directory 中 externalDomainFederation 的唯一識別碼</maml:para>
+            </maml:description>
+            <command:parametervalue required="true" variablelength="false">string</command:parametervalue>
+            <dev:type>
+                <maml:name>string</maml:name>
+                <maml:uri/>
+            </dev:type>
+            <dev:defaultvalue></dev:defaultvalue>
+        </command:parameter>
+    </command:parameters>
+    <!-- Input - Output section-->
+    <command:inputtypes>
+    </command:inputtypes>
+    <command:returnvalues>
+    </command:returnvalues>
+    <!-- Error section-->
+    <command:terminatingerrors/>
+    <command:nonterminatingerrors/>
+    <!-- Notes section  -->
+    <maml:alertset>
+        <maml:title></maml:title>
+        <maml:alert>
+            <maml:para>
+            </maml:para>
+        </maml:alert>
+        <maml:alert>
+            <maml:para></maml:para>
+        </maml:alert>
+    </maml:alertset>
+    <!-- Example section  -->
+    <command:examples>
+      <command:example>
+        <maml:title>範例 1: 刪除指定外部網域的外部網域同盟設定。</maml:title>
+        <dev:code>Remove-AzureADExternalFederationDomain -ExternalDomainName "test.com" 
+</dev:code>
+        <dev:remarks>
+          <maml:para>此命令會刪除外部網域同盟設定。</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <!-- Link section  -->
+    <maml:relatedlinks>
+    </maml:relatedlinks>
+</command:command>
+</helpItems>

@@ -1,0 +1,1744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Add-AzureADAdministrativeUnitMember</command:name>
+      <command:verb>Add</command:verb>
+      <command:noun>AzureADAdministrativeUnitMember</command:noun>
+      <maml:description>
+        <maml:para>Fügt ein Mitglied einer administrativen Einheit hinzu.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Mit dem Cmdlet "Add-AzureADAdministrativeUnitMember" wird ein Mitglied einer administrativen Active Directory-Einheit hinzugefügt.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Add-AzureADAdministrativeUnitMember</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+          <maml:name>InformationAction</maml:name>
+          <maml:Description>
+            <maml:para>Gibt an, wie dieses Cmdlet auf ein Informationsereignis reagiert. Zulässige Werte für diesen Parameter: * Continue</maml:para>
+            <maml:para>* Ignore</maml:para>
+            <maml:para>* Inquire</maml:para>
+            <maml:para>* SilentlyContinue</maml:para>
+            <maml:para>* Stop</maml:para>
+            <maml:para>* Suspend</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+          <dev:type>
+            <maml:name>ActionPreference</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+          <maml:name>InformationVariable</maml:name>
+          <maml:Description>
+            <maml:para>Gibt eine Variable an, in der eine Informationsereignismeldung gespeichert wird.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>Gibt die ID einer administrativen Active Directory-Einheit an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>RefObjectId</maml:name>
+          <maml:Description>
+            <maml:para>Gibt die eindeutige ID des spezifischen Azure Active Directory-Objekts an, das als Besitzer/Manager/Mitglied zugewiesen wird.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+        <maml:name>InformationAction</maml:name>
+        <maml:Description>
+          <maml:para>Gibt an, wie dieses Cmdlet auf ein Informationsereignis reagiert. Zulässige Werte für diesen Parameter: * Continue</maml:para>
+          <maml:para>* Ignore</maml:para>
+          <maml:para>* Inquire</maml:para>
+          <maml:para>* SilentlyContinue</maml:para>
+          <maml:para>* Stop</maml:para>
+          <maml:para>* Suspend</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+        <dev:type>
+          <maml:name>ActionPreference</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+        <maml:name>InformationVariable</maml:name>
+        <maml:Description>
+          <maml:para>Gibt eine Variable an, in der eine Informationsereignismeldung gespeichert wird.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>Gibt die ID einer administrativen Active Directory-Einheit an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>RefObjectId</maml:name>
+        <maml:Description>
+          <maml:para>Gibt die eindeutige ID des spezifischen Azure Active Directory-Objekts an, das als Besitzer/Manager/Mitglied zugewiesen wird.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples/>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureADAdministrativeUnitMember</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADAdministrativeUnitMember</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Add-AzureADScopedRoleMembership</command:name>
+      <command:verb>Add</command:verb>
+      <command:noun>AzureADScopedRoleMembership</command:noun>
+      <maml:description>
+        <maml:para>Fügt einer administrativen Einheit eine bereichsbezogene Rollenmitgliedschaft hinzu.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Mit dem Cmdlet "Add-AzureADScopedRoleMembership" wird einer administrativen Einheit eine bereichsbezogene Rollenmitgliedschaft hinzugefügt.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Add-AzureADScopedRoleMembership</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>AdministrativeUnitObjectId</maml:name>
+          <maml:Description>
+            <maml:para>Gibt die ID einer administrativen Einheit an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para></maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>RoleMemberInfo</maml:name>
+          <maml:Description>
+            <maml:para>Gibt ein RoleMemberInfo-Objekt an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">RoleMemberInfo</command:parameterValue>
+          <dev:type>
+            <maml:name>RoleMemberInfo</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>RoleObjectId</maml:name>
+          <maml:Description>
+            <maml:para></maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>AdministrativeUnitObjectId</maml:name>
+        <maml:Description>
+          <maml:para>Gibt die ID einer administrativen Einheit an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para></maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>RoleMemberInfo</maml:name>
+        <maml:Description>
+          <maml:para>Gibt ein RoleMemberInfo-Objekt an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">RoleMemberInfo</command:parameterValue>
+        <dev:type>
+          <maml:name>RoleMemberInfo</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>RoleObjectId</maml:name>
+        <maml:Description>
+          <maml:para></maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>Beispiel 1</maml:title>
+        <dev:code>$User = Get-AzureADUser -SearchString "The user that will be an admin on this unit"
+	$Role = Get-AzureADDirectoryRole | Where-Object -Property DisplayName -EQ -Value "User Account Administrator"
+	$Unit = Get-AzureADAdministrativeUnit | Where-Object -Property DisplayName -Eq -Value "&lt;The display name of the unit"
+	$RoleMember = New-Object -TypeName Microsoft.Open.AzureAD.Model.RoleMemberInfo
+	$RoleMember.ObjectId = $User.ObjectID
+	Add-AzureADScopedRoleMembership -ObjectId $unit.ObjectId -RoleObjectId $Role.ObjectId -RoleMemberInfo $RoleMember</dev:code>
+        <dev:remarks>
+          <maml:para>Dieses Cmdlet gibt das Bereichsrollen-Mitgliedschaftsobjekt zurück:</maml:para>
+          <maml:para></maml:para>
+          <maml:para>	AdministrativeUnitObjectId           RoleObjectId 	--------------------------           ------------ 	c9ab56cc-e349-4237-856e-cab03157a91e 526b7173-5a6e-49dc-88ec-b677a9093709</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureADScopedRoleMembership</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADScopedRoleMembership</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzureADAdministrativeUnit</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzureADAdministrativeUnit</command:noun>
+      <maml:description>
+        <maml:para>Ruft eine administrative Einheit ab.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Mit dem Cmdlet "Get-AzureADAdministrativeUnit" wird eine administrative Azure Active Directory-Einheit abgerufen.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzureADAdministrativeUnit</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>All</maml:name>
+          <maml:Description>
+            <maml:para>Bei TRUE werden alle administrativen Einheiten zurückgegeben. Bei FALSE wird die durch den Top-Parameter festgelegte Anzahl von Objekten zurückgegeben.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>Filter</maml:name>
+          <maml:Description>
+            <maml:para>Gibt eine oData v3.0-Filteranweisung an. Dieser Parameter filtert, welche Objekte zurückgegeben werden.</maml:para>
+            <maml:para>Weitere Informationen zu oData v3.0-Filterausdrücken finden Sie unter https://msdn.microsoft.com/de-de/library/hh169248%28v=nav.90%29.aspx</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>Top</maml:name>
+          <maml:Description>
+            <maml:para>Gibt die Höchstzahl zurückzugebender Datensätze an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-AzureADAdministrativeUnit</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>All</maml:name>
+          <maml:Description>
+            <maml:para>Bei TRUE werden alle administrativen Einheiten zurückgegeben. Bei FALSE wird die durch den Top-Parameter festgelegte Anzahl von Objekten zurückgegeben.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>Gibt die ID einer administrativen Einheit in Azure Active Directory an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>All</maml:name>
+        <maml:Description>
+          <maml:para>Bei TRUE werden alle administrativen Einheiten zurückgegeben. Bei FALSE wird die durch den Top-Parameter festgelegte Anzahl von Objekten zurückgegeben.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>Filter</maml:name>
+        <maml:Description>
+          <maml:para>Gibt eine oData v3.0-Filteranweisung an. Dieser Parameter filtert, welche Objekte zurückgegeben werden.</maml:para>
+          <maml:para>Weitere Informationen zu oData v3.0-Filterausdrücken finden Sie unter https://msdn.microsoft.com/de-de/library/hh169248%28v=nav.90%29.aspx</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>Gibt die ID einer administrativen Einheit in Azure Active Directory an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>Top</maml:name>
+        <maml:Description>
+          <maml:para>Gibt die Höchstzahl zurückzugebender Datensätze an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples/>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>New-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzureADAdministrativeUnitMember</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzureADAdministrativeUnitMember</command:noun>
+      <maml:description>
+        <maml:para>Ruft ein Mitglied einer administrativen Einheit ab.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Mit dem Cmdlet "Get-AzureADAdministrativeUnitMember" wird ein Mitglied einer administrativen Active Directory-Einheit abgerufen.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzureADAdministrativeUnitMember</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+          <maml:name>InformationAction</maml:name>
+          <maml:Description>
+            <maml:para>Gibt an, wie dieses Cmdlet auf ein Informationsereignis reagiert. Zulässige Werte für diesen Parameter: * Continue</maml:para>
+            <maml:para>* Ignore</maml:para>
+            <maml:para>* Inquire</maml:para>
+            <maml:para>* SilentlyContinue</maml:para>
+            <maml:para>* Stop</maml:para>
+            <maml:para>* Suspend</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+          <dev:type>
+            <maml:name>ActionPreference</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+          <maml:name>InformationVariable</maml:name>
+          <maml:Description>
+            <maml:para>Gibt eine Variable an, in der eine Informationsereignismeldung gespeichert wird.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>Gibt die ID einer administrativen Einheit in Azure Active Directory an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>All</maml:name>
+          <maml:Description>
+            <maml:para>Bei TRUE werden alle Mitglieder der administrativen Einheit zurückgegeben. Bei FALSE wird die durch den Top-Parameter festgelegte Anzahl von Objekten zurückgegeben.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>Top</maml:name>
+          <maml:Description>
+            <maml:para>Gibt die Höchstzahl zurückzugebender Datensätze an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+        <maml:name>InformationAction</maml:name>
+        <maml:Description>
+          <maml:para>Gibt an, wie dieses Cmdlet auf ein Informationsereignis reagiert. Zulässige Werte für diesen Parameter: * Continue</maml:para>
+          <maml:para>* Ignore</maml:para>
+          <maml:para>* Inquire</maml:para>
+          <maml:para>* SilentlyContinue</maml:para>
+          <maml:para>* Stop</maml:para>
+          <maml:para>* Suspend</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+        <dev:type>
+          <maml:name>ActionPreference</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+        <maml:name>InformationVariable</maml:name>
+        <maml:Description>
+          <maml:para>Gibt eine Variable an, in der eine Informationsereignismeldung gespeichert wird.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>Gibt die ID einer administrativen Einheit in Azure Active Directory an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>All</maml:name>
+        <maml:Description>
+          <maml:para>Bei TRUE werden alle Mitglieder der administrativen Einheit zurückgegeben. Bei FALSE wird die durch den Top-Parameter festgelegte Anzahl von Objekten zurückgegeben.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>Top</maml:name>
+        <maml:Description>
+          <maml:para>Gibt die Höchstzahl zurückzugebender Datensätze an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>Beispiel 1 Abrufen eines Mitglieds der administrativen Einheit nach ID</maml:title>
+        <dev:code>PS C:\&gt; Get-AzureADAdministrativeUnitMember -ObjectId "ef08b536-9d0a-4f8f-bda5-8b9cd01a9159"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Add-AzureADAdministrativeUnitMember</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADAdministrativeUnitMember</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzureADScopedRoleMembership</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzureADScopedRoleMembership</command:noun>
+      <maml:description>
+        <maml:para>Ruft eine bereichsbezogene Rollenmitgliedschaft aus einer administrativen Einheit ab.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Mit dem Cmdlet "Get-AzureADScopedRoleMembership" wird eine bereichsbezogene Rollenmitgliedschaft aus einer administrativen Einheit in Azure Active Directory (AD) abgerufen.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzureADScopedRoleMembership</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>Gibt die ID eines Objekts an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ScopedRoleMembershipId</maml:name>
+          <maml:Description>
+            <maml:para>Gibt die ID einer bereichsbezogenen Rollenmitgliedschaft an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>Gibt die ID eines Objekts an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ScopedRoleMembershipId</maml:name>
+        <maml:Description>
+          <maml:para>Gibt die ID einer bereichsbezogenen Rollenmitgliedschaft an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>----------- Beispiel 1: Abrufen des Administrators für bereichsbezogene Rollen -----------</maml:title>
+        <dev:code>PS C:\&gt;Get-AzureADScopedRoleMembership -ObjectId "526b7173-5a6e-49dc-88ec-b677a9093709" -ScopedRoleMembershipId "356b7173-5a6e-49dc-88ec-b677a9093709"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>---------Beispiel 2: Auflisten bereichsbezogener Administratoren für AU ---------</maml:title>
+        <dev:code>PS C:\&gt;Get-AzureADScopedRoleMembership -ObjectId "526b7173-5a6e-49dc-88ec-b677a9093709"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Add-AzureADScopedRoleMembership</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADScopedRoleMembership</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-AzureADAdministrativeUnit</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>AzureADAdministrativeUnit</command:noun>
+      <maml:description>
+        <maml:para>Erstellt eine administrative Einheit.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Mit dem Cmdlet "New-AzureADAdministrativeUnit" wird eine administrative Einheit in Azure Active Directory (AD) erstellt.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-AzureADAdministrativeUnit</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Description</maml:name>
+          <maml:Description>
+            <maml:para>Gibt eine Beschreibung für die neue administrative Einheit an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DisplayName</maml:name>
+          <maml:Description>
+            <maml:para>Gibt den Anzeigenamen der neuen administrativen Einheit an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+          <maml:name>InformationAction</maml:name>
+          <maml:Description>
+            <maml:para>Gibt an, wie dieses Cmdlet auf ein Informationsereignis reagiert. Zulässige Werte für diesen Parameter:</maml:para>
+            <maml:para>- Continue</maml:para>
+            <maml:para>- Ignore</maml:para>
+            <maml:para>- Inquire</maml:para>
+            <maml:para>- SilentlyContinue</maml:para>
+            <maml:para>- Stop</maml:para>
+            <maml:para>- Suspend</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+          <dev:type>
+            <maml:name>ActionPreference</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+          <maml:name>InformationVariable</maml:name>
+          <maml:Description>
+            <maml:para>Gibt eine Informationsvariable an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Description</maml:name>
+        <maml:Description>
+          <maml:para>Gibt eine Beschreibung für die neue administrative Einheit an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DisplayName</maml:name>
+        <maml:Description>
+          <maml:para>Gibt den Anzeigenamen der neuen administrativen Einheit an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+        <maml:name>InformationAction</maml:name>
+        <maml:Description>
+          <maml:para>Gibt an, wie dieses Cmdlet auf ein Informationsereignis reagiert. Zulässige Werte für diesen Parameter:</maml:para>
+          <maml:para>- Continue</maml:para>
+          <maml:para>- Ignore</maml:para>
+          <maml:para>- Inquire</maml:para>
+          <maml:para>- SilentlyContinue</maml:para>
+          <maml:para>- Stop</maml:para>
+          <maml:para>- Suspend</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+        <dev:type>
+          <maml:name>ActionPreference</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+        <maml:name>InformationVariable</maml:name>
+        <maml:Description>
+          <maml:para>Gibt eine Informationsvariable an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples/>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Remove-AzureADAdministrativeUnit</command:name>
+      <command:verb>Remove</command:verb>
+      <command:noun>AzureADAdministrativeUnit</command:noun>
+      <maml:description>
+        <maml:para>Entfernt eine administrative Einheit.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Mit dem Cmdlet "Remove-AzureADAdministrativeUnit" wir eine administrative Einheit aus Azure Active Directory entfernt.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-AzureADAdministrativeUnit</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+          <maml:name>InformationAction</maml:name>
+          <maml:Description>
+            <maml:para>Gibt an, wie dieses Cmdlet auf ein Informationsereignis reagiert. Zulässige Werte für diesen Parameter: * Continue</maml:para>
+            <maml:para>* Ignore</maml:para>
+            <maml:para>* Inquire</maml:para>
+            <maml:para>* SilentlyContinue</maml:para>
+            <maml:para>* Stop</maml:para>
+            <maml:para>* Suspend</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+          <dev:type>
+            <maml:name>ActionPreference</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+          <maml:name>InformationVariable</maml:name>
+          <maml:Description>
+            <maml:para>Gibt eine Variable an, in der eine Informationsereignismeldung gespeichert wird.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>Gibt die ID einer administrativen Einheit in Active Directory an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+        <maml:name>InformationAction</maml:name>
+        <maml:Description>
+          <maml:para>Gibt an, wie dieses Cmdlet auf ein Informationsereignis reagiert. Zulässige Werte für diesen Parameter: * Continue</maml:para>
+          <maml:para>* Ignore</maml:para>
+          <maml:para>* Inquire</maml:para>
+          <maml:para>* SilentlyContinue</maml:para>
+          <maml:para>* Stop</maml:para>
+          <maml:para>* Suspend</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+        <dev:type>
+          <maml:name>ActionPreference</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+        <maml:name>InformationVariable</maml:name>
+        <maml:Description>
+          <maml:para>Gibt eine Variable an, in der eine Informationsereignismeldung gespeichert wird.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>Gibt die ID einer administrativen Einheit in Active Directory an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples/>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Remove-AzureADAdministrativeUnitMember</command:name>
+      <command:verb>Remove</command:verb>
+      <command:noun>AzureADAdministrativeUnitMember</command:noun>
+      <maml:description>
+        <maml:para>Entfernt ein Mitglied einer administrativen Einheit.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Mit dem Cmdlet "Remove-AzureADAdministrativeUnitMember" wird ein Mitglied einer administrativen Einheit in Azure Active Directory (AD) entfernt.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-AzureADAdministrativeUnitMember</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+          <maml:name>InformationAction</maml:name>
+          <maml:Description>
+            <maml:para>Gibt an, wie dieses Cmdlet auf ein Informationsereignis reagiert.</maml:para>
+            <maml:para>Zulässige Werte für diesen Parameter:</maml:para>
+            <maml:para>- Continue</maml:para>
+            <maml:para>- Ignore</maml:para>
+            <maml:para>- Inquire</maml:para>
+            <maml:para>- SilentlyContinue</maml:para>
+            <maml:para>- Stop</maml:para>
+            <maml:para>- Suspend</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+          <dev:type>
+            <maml:name>ActionPreference</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+          <maml:name>InformationVariable</maml:name>
+          <maml:Description>
+            <maml:para>Gibt eine Informationsvariable an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>MemberId</maml:name>
+          <maml:Description>
+            <maml:para>Gibt die ID des Mitglieds der administrativen Einheit an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>Gibt die ID einer administrativen Einheit in Azure AD an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+        <maml:name>InformationAction</maml:name>
+        <maml:Description>
+          <maml:para>Gibt an, wie dieses Cmdlet auf ein Informationsereignis reagiert.</maml:para>
+          <maml:para>Zulässige Werte für diesen Parameter:</maml:para>
+          <maml:para>- Continue</maml:para>
+          <maml:para>- Ignore</maml:para>
+          <maml:para>- Inquire</maml:para>
+          <maml:para>- SilentlyContinue</maml:para>
+          <maml:para>- Stop</maml:para>
+          <maml:para>- Suspend</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+        <dev:type>
+          <maml:name>ActionPreference</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+        <maml:name>InformationVariable</maml:name>
+        <maml:Description>
+          <maml:para>Gibt eine Informationsvariable an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>MemberId</maml:name>
+        <maml:Description>
+          <maml:para>Gibt die ID des Mitglieds der administrativen Einheit an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>Gibt die ID einer administrativen Einheit in Azure AD an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples/>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Add-AzureADAdministrativeUnitMember</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADAdministrativeUnitMember</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Remove-AzureADScopedRoleMembership</command:name>
+      <command:verb>Remove</command:verb>
+      <command:noun>AzureADScopedRoleMembership</command:noun>
+      <maml:description>
+        <maml:para>Entfernt eine bereichsbezogene Rollenmitgliedschaft.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Mit dem Cmdlet "Remove-AzureADScopedRoleMembership" wird eine bereichsbezogene Rollenmitgliedschaft aus Azure Active Directory (AD) entfernt.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-AzureADScopedRoleMembership</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>Gibt eine Objekt-ID an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ScopedRoleMembershipId</maml:name>
+          <maml:Description>
+            <maml:para>Gibt die ID der zu entfernenden bereichsbezogenen Rollenmitgliedschaft an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>Gibt eine Objekt-ID an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ScopedRoleMembershipId</maml:name>
+        <maml:Description>
+          <maml:para>Gibt die ID der zu entfernenden bereichsbezogenen Rollenmitgliedschaft an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Beispiel 1 --------------------------</maml:title>
+        <dev:code>Remove-AzureADScopedRoleMembership -ObjectId "1026185e-25df-4522-a380-7ab697a7241c" -ScopedRoleMembershipId "3028185e-25df-4522-a380-7ab697a7241c"</dev:code>
+        <dev:remarks>
+          <maml:para>Entfernt eine bereichsbezogene Mitgliedschaft.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Add-AzureADScopedRoleMembership</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureADScopedRoleMembership</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-AzureADAdministrativeUnit</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>AzureADAdministrativeUnit</command:noun>
+      <maml:description>
+        <maml:para>Aktualisiert eine administrative Einheit.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Mit dem Cmdlet "Set-AzureADAdministrativeUnit" wird eine administrative Einheit in Azure Active Directory (AD) aktualisiert.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-AzureADAdministrativeUnit</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Description</maml:name>
+          <maml:Description>
+            <maml:para>Gibt eine Beschreibung an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DisplayName</maml:name>
+          <maml:Description>
+            <maml:para>Gibt einen Anzeigenamen an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+          <maml:name>InformationAction</maml:name>
+          <maml:Description>
+            <maml:para>Gibt an, wie dieses Cmdlet auf ein Informationsereignis reagiert. Zulässige Werte für diesen Parameter:</maml:para>
+            <maml:para>- Continue</maml:para>
+            <maml:para>- Ignore</maml:para>
+            <maml:para>- Inquire</maml:para>
+            <maml:para>- SilentlyContinue</maml:para>
+            <maml:para>- Stop</maml:para>
+            <maml:para>- Suspend</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+          <dev:type>
+            <maml:name>ActionPreference</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+          <maml:name>InformationVariable</maml:name>
+          <maml:Description>
+            <maml:para>Gibt eine Informationsvariable an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>Gibt die ID einer administrativen Einheit in Azure AD an.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri/>
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Description</maml:name>
+        <maml:Description>
+          <maml:para>Gibt eine Beschreibung an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DisplayName</maml:name>
+        <maml:Description>
+          <maml:para>Gibt einen Anzeigenamen an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="infa">
+        <maml:name>InformationAction</maml:name>
+        <maml:Description>
+          <maml:para>Gibt an, wie dieses Cmdlet auf ein Informationsereignis reagiert. Zulässige Werte für diesen Parameter:</maml:para>
+          <maml:para>- Continue</maml:para>
+          <maml:para>- Ignore</maml:para>
+          <maml:para>- Inquire</maml:para>
+          <maml:para>- SilentlyContinue</maml:para>
+          <maml:para>- Stop</maml:para>
+          <maml:para>- Suspend</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+        <dev:type>
+          <maml:name>ActionPreference</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="iv">
+        <maml:name>InformationVariable</maml:name>
+        <maml:Description>
+          <maml:para>Gibt eine Informationsvariable an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>Gibt die ID einer administrativen Einheit in Azure AD an.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri/>
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes/>
+    <command:returnValues/>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples/>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureADAdministrativeUnit</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+    <command:details>
+        <command:name>
+            Get-AzureADExternalDomainFederation
+        </command:name>
+        <maml:description>
+            <maml:para>Hiermit rufen Sie eine externalDomainFederation anhand des externen Domänennamens ab.</maml:para>
+        </maml:description>
+        <maml:copyright>
+            <maml:para></maml:para>
+        </maml:copyright>
+        <command:verb>Get</command:verb>
+        <command:noun>AzureADExternalDomainFederation</command:noun>
+        <dev:version></dev:version>
+    </command:details>
+    <maml:description>
+        <maml:para></maml:para>
+    </maml:description>
+    <!-- Cmdlet syntax section-->
+    <command:syntax>
+        <command:syntaxitem>
+            <maml:name>Get-AzureADExternalDomainFederation</maml:name>
+            <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+                <maml:name>ExternalDomainName</maml:name>
+                <maml:description>
+                    <maml:para>Der eindeutige Bezeichner einer externalDomainFederation in Azure Active Directory</maml:para>
+                </maml:description>
+                <command:parametervalue required="true" variablelength="false">string</command:parametervalue>
+            </command:parameter>
+            <command:parameter required="false" variablelength="false" globbing="false" pipelineinput="true" position="named">
+                <maml:name>All</maml:name>
+                <maml:description>
+                    <maml:para>Boolescher Wert, der festlegt, ob für die jeweilige Abfrage alle Ergebnisse vom Server zurückgegeben werden</maml:para>
+                </maml:description>
+                <command:parametervalue required="false" variablelength="false">bool?</command:parametervalue>
+            </command:parameter>
+            <command:parameter required="false" variablelength="false" globbing="false" pipelineinput="true" position="named">
+                <maml:name>Top</maml:name>
+                <maml:description>
+                    <maml:para>Die maximale Anzahl von Datensätzen, die zurückgegeben werden sollen.</maml:para>
+                </maml:description>
+                <command:parametervalue required="false" variablelength="false">int?</command:parametervalue>
+            </command:parameter>
+            <command:parameter required="false" variablelength="false" globbing="false" pipelineinput="true" position="named">
+                <maml:name>Filter</maml:name>
+                <maml:description>
+                    <maml:para>Die oData v3.0-Filteranweisung. Diese steuert, welche Objekte zurückgegeben werden.</maml:para>
+                </maml:description>
+                <command:parametervalue required="false" variablelength="false">string</command:parametervalue>
+            </command:parameter>
+        </command:syntaxitem>
+    </command:syntax>
+    <!-- Cmdlet parameter section  -->
+    <command:parameters>
+        <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+            <maml:name>ExternalDomainName</maml:name>
+            <maml:description>
+                <maml:para>Der eindeutige Bezeichner einer externalDomainFederation in Azure Active Directory</maml:para>
+            </maml:description>
+            <command:parametervalue required="true" variablelength="false">string</command:parametervalue>
+            <dev:type>
+                <maml:name>string</maml:name>
+                <maml:uri/>
+            </dev:type>
+            <dev:defaultvalue></dev:defaultvalue>
+        </command:parameter>
+        <command:parameter required="false" variablelength="false" globbing="false" pipelineinput="true" position="named">
+            <maml:name>All</maml:name>
+            <maml:description>
+                <maml:para>Boolescher Wert, der festlegt, ob für die jeweilige Abfrage alle Ergebnisse vom Server zurückgegeben werden</maml:para>
+            </maml:description>
+            <command:parametervalue required="false" variablelength="false">bool?</command:parametervalue>
+            <dev:type>
+                <maml:name>bool?</maml:name>
+                <maml:uri/>
+            </dev:type>
+            <dev:defaultvalue></dev:defaultvalue>
+        </command:parameter>
+        <command:parameter required="false" variablelength="false" globbing="false" pipelineinput="true" position="named">
+            <maml:name>Top</maml:name>
+            <maml:description>
+                <maml:para>Die maximale Anzahl von Datensätzen, die zurückgegeben werden sollen.</maml:para>
+            </maml:description>
+            <command:parametervalue required="false" variablelength="false">int?</command:parametervalue>
+            <dev:type>
+                <maml:name>int?</maml:name>
+                <maml:uri/>
+            </dev:type>
+            <dev:defaultvalue></dev:defaultvalue>
+        </command:parameter>
+        <command:parameter required="false" variablelength="false" globbing="false" pipelineinput="true" position="named">
+            <maml:name>Filter</maml:name>
+            <maml:description>
+                <maml:para>Die oData v3.0-Filteranweisung. Diese steuert, welche Objekte zurückgegeben werden.</maml:para>
+            </maml:description>
+            <command:parametervalue required="false" variablelength="false">string</command:parametervalue>
+            <dev:type>
+                <maml:name>string</maml:name>
+                <maml:uri/>
+            </dev:type>
+            <dev:defaultvalue></dev:defaultvalue>
+        </command:parameter>
+    </command:parameters>
+    <command:inputtypes>
+    </command:inputtypes>
+    <command:returnvalues>
+    </command:returnvalues>
+    <!-- Error section-->
+    <command:terminatingerrors/>
+    <command:nonterminatingerrors/>
+    <!-- Notes section  -->
+    <maml:alertset>
+        <maml:title></maml:title>
+        <maml:alert>
+            <maml:para>
+            </maml:para>
+        </maml:alert>
+        <maml:alert>
+            <maml:para></maml:para>
+        </maml:alert>
+    </maml:alertset>
+    <!-- Example section  -->
+    <command:examples>
+    <command:example>
+        <maml:title>Beispiel 1: Ruft eine Einstellung für externe Verbunddomänen für eine bestimmte externe Domäne ab.</maml:title>
+        <dev:code>Get-AzureADExternalFederationDomain -ExternalDomainName "test.com" 
+</dev:code>
+        <dev:remarks>
+          <maml:para>Mit diesem Befehl wird eine Einstellung für externe Verbunddomänen abgerufen.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <!-- Link section  -->
+    <maml:relatedlinks>
+    </maml:relatedlinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+    <command:details>
+        <command:name>
+            New-AzureADExternalDomainFederation
+        </command:name>
+        <maml:description>
+            <maml:para>Neue externalDomainFederation in Azure Active Directory erstellen</maml:para>
+        </maml:description>
+        <maml:copyright>
+            <maml:para></maml:para>
+        </maml:copyright>
+        <command:verb>New</command:verb>
+        <command:noun>AzureADExternalDomainFederation</command:noun>
+        <dev:version></dev:version>
+    </command:details>
+    <maml:description>
+        <maml:para></maml:para>
+    </maml:description>
+    <!-- Cmdlet syntax section-->
+    <command:syntax>
+        <command:syntaxitem>
+            <maml:name>New-AzureADExternalDomainFederation</maml:name>
+             <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+                <maml:name>ExternalDomainName</maml:name>
+                <maml:description>
+                    <maml:para>Die externe Domäne, für die Sie Einstellungen konfigurieren möchten.</maml:para>
+                </maml:description>
+                <command:parametervalue required="true" variablelength="false">string</command:parametervalue>
+            </command:parameter>
+             <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+                <maml:name>FederationSettings</maml:name>
+                <maml:description>
+                    <maml:para>Verbundeinstellungen für die externe Domäne.</maml:para>
+                    <maml:para>$federationSettings = New-Object -TypeName Microsoft.Open.AzureAD.Model.DomainFederationSettings</maml:para>
+                    <maml:para>Zuletzt können Sie diese Variable an das Cmdlet übergeben:</maml:para>
+                    <maml:para>New-AzureADExternalDomainFederation -FederationSettings $federationSettings ...</maml:para>
+                </maml:description>
+                <command:parametervalue required="true" variablelength="false"></command:parametervalue>
+                <dev:type>
+                  <maml:name>DomainFederationSettings</maml:name>
+                  <maml:uri/>
+                </dev:type>
+            </command:parameter>
+        </command:syntaxitem>
+    </command:syntax>
+    <!-- Cmdlet parameter section  -->
+    <command:parameters>
+     <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+            <maml:name>ExternalDomainName</maml:name>
+            <maml:description>
+                <maml:para>Der eindeutige Bezeichner einer externalDomainFederation in Azure Active Directory</maml:para>
+            </maml:description>
+            <command:parametervalue required="true" variablelength="false">string</command:parametervalue>
+            <dev:type>
+                <maml:name>string</maml:name>
+                <maml:uri/>
+            </dev:type>
+            <dev:defaultvalue></dev:defaultvalue>
+        </command:parameter>
+         <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+            <maml:name>FederationSettings</maml:name>
+            <maml:description>
+                <maml:para>Die Verbundeinstellungen für die externe Domäne.</maml:para>
+            </maml:description>
+            <command:parametervalue required="true" variablelength="false">string</command:parametervalue>
+            <dev:type>
+                <maml:name>DomainFederationSettings</maml:name>
+                <maml:uri/>
+            </dev:type>
+            <dev:defaultvalue></dev:defaultvalue>
+        </command:parameter>
+    </command:parameters>
+    <!-- Input - Output section-->
+    <command:inputtypes/>
+    <command:returnvalues>
+    </command:returnvalues>
+    <!-- Error section-->
+    <command:terminatingerrors/>
+    <command:nonterminatingerrors/>
+    <!-- Notes section  -->
+    <maml:alertset>
+        <maml:title></maml:title>
+        <maml:alert>
+            <maml:para>
+            </maml:para>
+        </maml:alert>
+        <maml:alert>
+            <maml:para></maml:para>
+        </maml:alert>
+    </maml:alertset>
+    <!-- Example section  -->
+    <command:examples>
+     <command:example>
+        <maml:title>Beispiel 1: Erstellt einen neuen Verbund externer Domänen.</maml:title>
+        <dev:code>$federationSettings = New-Object Microsoft.Open.AzureAD.Model.DomainFederationSettings
+$federationSettings.ActiveLogOnUri="https://adfs.com/adfs/ls"
+$federationSettings.IssuerUri = "http://adfs.com/adfs/services/trust"
+$federationSettings.LogOffUri = $federationSettings.ActiveLogOnUri
+$federationSettings.FederationBrandName = "Contoso Misa1 US"
+$federationSettings.MetadataExchangeUri="http://adfs.com/FederationMetadata.xml"
+$federationSettings.PassiveLogOnUri=$federationSettings.ActiveLogOnUri
+$federationSettings.PreferredAuthenticationProtocol="WsFed"
+$federationSettings.SigningCertificate="X509 signing public key"
+New-AzureADExternalFederationDomain -ExternalDomainName "adfs.com" -FederationSettings $federationSettings
+</dev:code>
+        <dev:remarks>
+          <maml:para>Mit diesem Befehl werden neue Einstellungen für externe Verbunddomänen erstellt.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <!-- Link section  -->
+    <maml:relatedlinks>
+    </maml:relatedlinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+    <command:details>
+        <command:name>
+            Remove-AzureADExternalDomainFederation
+        </command:name>
+        <maml:description>
+            <maml:para>Hiermit löschen Sie eine externalDomainFederation anhand des externen Domänennamens.</maml:para>
+        </maml:description>
+        <maml:copyright>
+            <maml:para></maml:para>
+        </maml:copyright>
+        <command:verb>Remove</command:verb>
+        <command:noun>AzureADExternalDomainFederation</command:noun>
+        <dev:version></dev:version>
+    </command:details>
+    <maml:description>
+        <maml:para></maml:para>
+    </maml:description>
+    <!-- Cmdlet syntax section-->
+    <command:syntax>
+        <command:syntaxitem>
+            <maml:name>Remove-AzureADExternalDomainFederation</maml:name>
+            <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+                <maml:name>ExternalDomainName</maml:name>
+                <maml:description>
+                    <maml:para>Der eindeutige Bezeichner einer externalDomainFederation in Azure Active Directory</maml:para>
+                </maml:description>
+                <command:parametervalue required="true" variablelength="false">string</command:parametervalue>
+            </command:parameter>
+        </command:syntaxitem>
+    </command:syntax>
+    <!-- Cmdlet parameter section  -->
+    <command:parameters>
+        <command:parameter required="true" variablelength="false" globbing="false" pipelineinput="true" position="named">
+            <maml:name>ExternalDomainName</maml:name>
+            <maml:description>
+                <maml:para>Der eindeutige Bezeichner einer externalDomainFederation in Azure Active Directory</maml:para>
+            </maml:description>
+            <command:parametervalue required="true" variablelength="false">string</command:parametervalue>
+            <dev:type>
+                <maml:name>string</maml:name>
+                <maml:uri/>
+            </dev:type>
+            <dev:defaultvalue></dev:defaultvalue>
+        </command:parameter>
+    </command:parameters>
+    <!-- Input - Output section-->
+    <command:inputtypes>
+    </command:inputtypes>
+    <command:returnvalues>
+    </command:returnvalues>
+    <!-- Error section-->
+    <command:terminatingerrors/>
+    <command:nonterminatingerrors/>
+    <!-- Notes section  -->
+    <maml:alertset>
+        <maml:title></maml:title>
+        <maml:alert>
+            <maml:para>
+            </maml:para>
+        </maml:alert>
+        <maml:alert>
+            <maml:para></maml:para>
+        </maml:alert>
+    </maml:alertset>
+    <!-- Example section  -->
+    <command:examples>
+      <command:example>
+        <maml:title>Beispiel 1: Löscht eine Einstellung für externe Verbunddomänen für eine bestimmte externe Domäne.</maml:title>
+        <dev:code>Remove-AzureADExternalFederationDomain -ExternalDomainName "test.com" 
+</dev:code>
+        <dev:remarks>
+          <maml:para>Mit diesem Befehl wird eine Einstellung für externe Verbunddomänen gelöscht.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <!-- Link section  -->
+    <maml:relatedlinks>
+    </maml:relatedlinks>
+</command:command>
+</helpItems>
