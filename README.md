@@ -10,7 +10,7 @@ The following 4 modules are used:
 * [Azure Command-Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/)
 * [AAD Internals](https://o365blog.com/aadinternals/)
 
-This script is also designed to run other popular scripts and modules intended to get the most information out of you target Azure AD tenant. You should look into their project to understand the full capabilities of the tools besides the small task performed within this script.
+This script is also designed to run other popular scripts and modules intended to get the most information out of your target Azure AD tenant. You should look into their project to understand the full capabilities of the tools besides the small task performed within this script.
 
 * [AzureHound](https://github.com/BloodHoundAD/AzureHound)
 * [MicroBurst: A PowerShell Toolkit for Attacking Azure](https://github.com/NetSPI/MicroBurst)
